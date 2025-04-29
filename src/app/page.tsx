@@ -1,13 +1,18 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
-      <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md">
+      <nav className="fixed w-full z-50 navbar">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between h-16 items-center">
-            <div className="font-bold text-xl">Streetknits</div>
-            <div className="hidden sm:flex space-x-8">
+          <div className="navbar-container">
+            <div className="navbar-logo">
+              <a href="#">
+                <img src="../StreetKnitsLogo7.png" alt="Streetknits Logo" className="navbar-logo-image" />
+              </a>
+              <a href="#">
+              <span className="navbar-logo-text" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>StreetKnits</span>
+              </a>
+            </div>
+            <div className="navbar-links">
               <a href="#" className="hover:text-gray-600">About</a>
               <a href="#" className="hover:text-gray-600">Contact</a>
             </div>
@@ -15,20 +20,23 @@ export default function Home() {
         </div>
       </nav>
 
-      <main className="flex-grow">
-        <div className="relative">
-          <Image
-            className="object-cover object-center"
-            src="/homeScreenBackground2.png"
-            alt="Streetknits Background"
-            fill
-            priority
-            sizes="1000vw"
-            quality={100}
-          />
+      <main
+        className="flex-grow"
+        style={{
+          backgroundImage: 'url(/homeScreenBackground10.svg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center 1%',
+          backgroundRepeat: 'no-repeat',
+          paddingTop: '64px'
+        }}
+      >
+        <div className="relative" style={{ height: '100vh' }}>
           <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
             <div className="text-center text-white">
-              <h1 className="text-4xl sm:text-6xl font-bold mb-4">Streetknits</h1>
+              <h1 className="text-4xl sm:text-6xl font-bold mb-4">About Us</h1>
+              <p className="text-lg sm:text-xl mb-8 px-4 sm:px-0">
+                StreetKnits is a humanitarian knitting charity dedicated to warming bodies and hearts. Since 2013, StreetKnits is the passion and perpetual project of founder Silke Feltz who aims not only to keep her neighbors warm, but also to help students, teachers, and members of the community to find their knitting zen. Currently, StreetKnits operates from Norman, Oklahoma.
+              </p>
             </div>
           </div>
         </div>

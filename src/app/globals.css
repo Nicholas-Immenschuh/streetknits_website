@@ -1,8 +1,17 @@
+/* filepath: /Users/nicholasimmenschuh/Documents/Computer Science/Individual Projects/Streeknits Website/streetknits_website/src/app/globals.css */
+@font-face {
+  font-family: 'Typewriter-Serial-Regular';
+  src: url('/Typewriter-Serial-Regular.woff2') format('woff2'),
+       url('/Typewriter-Serial-Regular.woff') format('woff'),
+       url('/Typewriter-Serial-Regular.ttf') format('truetype'); /* Keep TTF as a fallback */
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body {
@@ -10,6 +19,69 @@ body {
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-.min-h-screen {
-  min-height: 100vh;
+.navbar {
+  font-size: 24pt;
+  font-family: 'Typewriter-Serial-Regular', 'Times New Roman', Times, serif;
+  background-color: #9BDEEF;
+  backdrop-filter: blur(5px);
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Add this line */
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo a {
+  color: #FFFFFF;
+  text-decoration: none; /* Remove the underline */
+}
+
+
+.navbar-logo-image {
+  height: 55px; /* Adjust this value to your desired height */
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 0.25rem;
+  /* Add any image-specific styles here (e.g., box-shadow) */
+}
+
+.navbar-logo-text {
+  /* Remove any padding or margin */
+  padding: 0;
+  margin: 0;
+  font-size: 24pt; /* Example: Set a specific font size */
+  color: #FFFFFF;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  /* Remove any padding or margin */
+  padding: 0;
+  margin: 0;
+  font-size: 24pt; /* Match the logo text font size */
+  line-height: 1; /* Match the logo text line height */
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: text-shadow 0.4s ease; /* Add a smooth transition */
+}
+
+.navbar-links a:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Remove the shadow on hover */
+}
+
+h1, p {
+  transform: translateY(750px);
 }
