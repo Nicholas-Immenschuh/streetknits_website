@@ -3,7 +3,7 @@
   font-family: 'Typewriter-Serial-Regular';
   src: url('/Typewriter-Serial-Regular.woff2') format('woff2'),
        url('/Typewriter-Serial-Regular.woff') format('woff'),
-       url('/Typewriter-Serial-Regular.ttf') format('truetype'); /* Keep TTF as a fallback */
+       url('/Typewriter-Serial-Regular.ttf') format('truetype');
 }
 
 html,
@@ -30,7 +30,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; /* Add this line */
+  align-items: center;
   margin-left: 50px;
   margin-right: 50px;
 }
@@ -47,10 +47,9 @@ body {
 
 
 .navbar-logo-image {
-  height: 55px; /* Adjust this value to your desired height */
+  height: 55px;
   width: auto; /* Maintain aspect ratio */
   margin-right: 0.25rem;
-  /* Add any image-specific styles here (e.g., box-shadow) */
 }
 
 .navbar-logo-text {
@@ -79,9 +78,40 @@ body {
 }
 
 .navbar-links a:hover {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Remove the shadow on hover */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
 }
 
-h1, p {
-  transform: translateY(750px);
+h1 {
+  font-family: 'Typewriter-Serial-Regular', 'Times New Roman', Times, serif;
+  color:#9BDEEF;
+  font-size: 90pt;
+  padding-top: 800px;
+}
+
+section h1, p {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+
+section p {
+  font-family: Avenir, sans-serif, Georgia, 'Times New Roman', Times, serif;
+  font-size: 30pt;
+  color: white;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  display: inline-block;
+}
+
+footer {
+  background-color: #99C440;
+  color: #fff;
+  text-align: center;
+  font-family: Avenir, sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+footer p {
+  font-size: 12pt;
+  display: inline-block;
 }
