@@ -52,12 +52,18 @@ body {
   margin-right: 0.25rem;
 }
 
-.navbar-logo-text {
+.navbar-logo-text a{
   /* Remove any padding or margin */
   padding: 0;
   margin: 0;
   font-size: 24pt; /* Example: Set a specific font size */
   color: #FFFFFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Initial text shadow */
+  transition: text-shadow 0.3s ease; /* Add a smooth transition */
+}
+
+.navbar-logo-text a:hover {
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); /* Shadow on hover */
 }
 
 .navbar-links {
@@ -77,7 +83,7 @@ body {
   transition: text-shadow 0.4s ease; /* Add a smooth transition */
 }
 
-.navbar-links a:hover {
+.navbar-links a:hover { /* Corrected selector */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
 }
 

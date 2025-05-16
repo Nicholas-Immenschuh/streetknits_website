@@ -1,5 +1,6 @@
 import './globals.css';
 import { Metadata } from 'next/types';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Streetknits',

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <>
@@ -6,16 +8,16 @@ export default function Home() {
           
             <div className="navbar-container">
               <div className="navbar-logo">
-                <a href="#">
-                  <img src="../StreetKnitsLogo7.png" alt="Streetknits Logo" className="navbar-logo-image" />
-                </a>
-                <a href="#">
+                <Link href="/">
+                  <img src="../StreetKnitsLogo.png" alt="Streetknits Logo" className="navbar-logo-image" />
+                </Link>
+                <Link href="/">
                   <span className="navbar-logo-text" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>StreetKnits</span>
-                </a>
+                </Link>
               </div>
               <div className="navbar-links">
-                <a href="#" className="hover:text-gray-600">About</a>
-                <a href="#" className="hover:text-gray-600">Contact</a>
+                <Link href="/donate">Donate</Link>
+                <Link href="/contact">Contact</Link>
               </div>
             </div>
         </nav>
