@@ -1,4 +1,4 @@
-/* filepath: /Users/nicholasimmenschuh/Documents/Computer Science/Individual Projects/Streeknits Website/streetknits_website/src/app/globals.css */
+/* filepath: /Users/nicholasimmenschuh/Documents/Computer Science/Individual Projects/StreetKnits/src/app/globals.css */
 @font-face {
   font-family: 'Typewriter-Serial-Regular';
   src: url('/Typewriter-Serial-Regular.woff2') format('woff2'),
@@ -15,7 +15,6 @@ body {
 }
 
 body {
-  background-color: #6B892B;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
@@ -45,6 +44,10 @@ body {
   text-decoration: none; /* Remove the underline */
 }
 
+.cloudScalableVectorGraphic {
+  height: 60%;
+  width: 60%;
+}
 
 .navbar-logo-image {
   height: 55px;
@@ -52,18 +55,17 @@ body {
   margin-right: 0.25rem;
 }
 
-.navbar-logo-text a{
+.navbar-logo-text{
   /* Remove any padding or margin */
   padding: 0;
   margin: 0;
   font-size: 24pt; /* Example: Set a specific font size */
   color: #FFFFFF;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Initial text shadow */
   transition: text-shadow 0.3s ease; /* Add a smooth transition */
 }
 
-.navbar-logo-text a:hover {
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); /* Shadow on hover */
+.navbar-logo-text:hover {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow on hover */
 }
 
 .navbar-links {
@@ -88,36 +90,75 @@ body {
 }
 
 h1 {
+  color: #FFFFFF;
+  font-Size: 88pt;
   font-family: 'Typewriter-Serial-Regular', 'Times New Roman', Times, serif;
-  color:#9BDEEF;
-  font-size: 90pt;
-  padding-top: 800px;
 }
 
-section h1, p {
-  text-align: center;
-  padding-bottom: 0;
-}
-
-
-section p {
-  font-family: Avenir, sans-serif, Georgia, 'Times New Roman', Times, serif;
+p {
   font-size: 30pt;
-  color: white;
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 100px;
+  font-family: Avenir, sans-serif, Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
   display: inline-block;
 }
 
 footer {
-  background-color: #99C440;
-  color: #fff;
   text-align: center;
-  font-family: Avenir, sans-serif, Georgia, 'Times New Roman', Times, serif;
 }
 
 footer p {
+  color: #FFFFFF;
+  text-align: center;
   font-size: 12pt;
   display: inline-block;
 }
+
+/* Home Page */
+#homePageBackgroundContainer {
+  background-color: #6B892B;
+  background-image: url(/homePageBackground.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: 64px;
+}
+
+/* Donate Page */
+#donatePageBackgroundContainer {
+  background-image:  url(/donatePageBackground11.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 64px;
+}
+
+.cloudScalableVectorGraphic {
+  height: auto;
+  width: auto;
+}
+
+
+.textBackgroundImageContainer {
+  position: relative;
+  text-align: center;
+  top: 1px;
+}
+
+.textBackgroundImageText {
+  position: absolute;
+  top: 45%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+}
+
+.donateSignContainer {
+  position: relative;
+  text-align: center;
+  top: 800px;
+  left: 1%;
+  padding-bottom: 850px;
+}
+
+.donateSignScalableVectorGraphic {
+  height: 80%;
+  width: 80%;
+}
+
