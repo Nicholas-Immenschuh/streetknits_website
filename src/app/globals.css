@@ -40,13 +40,13 @@ body {
 }
 
 .navbar-logo a {
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none; /* Remove the underline */
 }
 
 .cloudScalableVectorGraphic {
-  height: 60%;
-  width: 60%;
+  height: 30%;
+  width: 30%;
 }
 
 .navbar-logo-image {
@@ -124,7 +124,8 @@ footer p {
 
 /* Donate Page */
 #donatePageBackgroundContainer {
-  background-image:  url(/donatePageBackground11.svg);
+  background-color: #6B892B;
+  background-image:  url(/donatePageBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 64px;
@@ -136,25 +137,28 @@ footer p {
 }
 
 
-.textBackgroundImageContainer {
+.cloudScalableVectorGraphicContainer {
   position: relative;
   text-align: center;
-  top: 1px;
+  top: 100px;
 }
 
-.textBackgroundImageText {
+.cloudScalableVectorGraphicText {
   position: absolute;
   top: 45%;
   left: 50%; 
   transform: translate(-50%, -50%);
+  font-family: Avenir, sans-serif, Georgia, Times, serif;
+  font-size: 30pt;
+  font-weight: normal;
 }
 
-.donateSignContainer {
+.donateSignScalableVectorGraphicContainer {
+  padding-top: 550px;
   position: relative;
   text-align: center;
-  top: 800px;
   left: 1%;
-  padding-bottom: 850px;
+  padding-bottom: 60px;
 }
 
 .donateSignScalableVectorGraphic {

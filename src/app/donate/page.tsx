@@ -26,9 +26,9 @@ export default function Donate() {
       <main id="donatePageBackgroundContainer">
           <article>
             <section>
-                <div className="textBackgroundImageContainer" style={{left: '20%'}}>
+                <div className="cloudScalableVectorGraphicContainer" style={{left: '20%'}}>
                 <img className="cloudScalableVectorGraphic" src= "../donateCloud1.svg" alt="cloud"/>
-                <p className="textBackgroundImageText" style={{color: '#F49BAD', top: '45%', left: '50%'}}>
+                <p className="cloudScalableVectorGraphicText" style={{color: '#F49BAD', top: '45%', left: '50%'}}>
                   We are a community of knitters who want to help keep people safe and warm during the winter. 
                   Would you like to join us? Donating knitted goods is a great place to start!
                 </p>
@@ -36,9 +36,9 @@ export default function Donate() {
             </section>
 
             <section>
-              <div className="textBackgroundImageContainer" style={{right: '10%'}}>
+              <div className="cloudScalableVectorGraphicContainer" style={{right: '10%'}}>
                 <img className="cloudScalableVectorGraphic" src= "../donateCloud2.svg" alt="cloud"/>
-                <p className="textBackgroundImageText" style={{color: '#89B7B7', top: '51%', left: '49%'}}>
+                <p className="cloudScalableVectorGraphicText" style={{color: '#89B7B7', top: '51%', left: '49%'}}>
                   Send StreetKnits an email if you would like to mail knitwear or yarn. 
                   Also, if you are short on time and knitting supplies and prefer to donate in another way, 
                   monetary donations are helpful for buying yarn, needles, and organizing knitting workshops.
@@ -47,12 +47,12 @@ export default function Donate() {
             </section>
           
             <section>
-              <div className="donateSignContainer">
+              <div className="donateSignScalableVectorGraphicContainer">
                 <img className="donateSignScalableVectorGraphic" src= "../donateSign.svg" alt="sign"/>
-                <h1 style={{ color: '#000000', position: 'absolute', top: '10%', left: '49%', transform: 'translate(-50%, -50%)'}}>
+                <h1 style={{ color: '#000000', position: 'absolute', top: '32%', left: '49%', transform: 'translate(-50%, -50%)'}}>
                   Donations
                 </h1>
-                <p style={{ color: '#000000', position: 'absolute', top: '30%', left: '49%', transform: 'translate(-50%, -50%)', whiteSpace: 'pre'}}>
+                <p style={{position: 'absolute', top: '52%', left: '49%', transform: 'translate(-50%, -50%)', whiteSpace: 'pre'}}>
             
                   2014 - Simpson Housing Services (Minneapolis, MN): 56    
                   <br></br>2015 - New Community Shelter (Green Bay, WI):       185
@@ -67,7 +67,7 @@ export default function Donate() {
                   <br></br>​2024 - Food and Shelter (Norman, OK):                     362
                   <br></br>2025 - in progess...                                                      ???
                 </p>
-                <p style={{position: 'absolute', top: '43%', left: '38%', fontWeight: 'bold'}}>Venmo: "accountName" </p>
+                <p style={{position: 'absolute', top: '67%', left: '38%', fontWeight: 'bold'}}>Venmo: "accountName" </p>
               </div>
             </section>
         </article>

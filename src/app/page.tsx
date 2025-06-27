@@ -31,7 +31,7 @@ export default function Home() {
         <article>
           <section style={{textAlign: 'center', paddingBottom: '0'}}>
             <h1 style={{ color: '#9BDEEF', fontSize: '90pt', paddingTop: '800px'}}>About Us</h1>
-                <p style={{ fontSize: '30pt', color: 'white', paddingLeft: '100px', paddingRight: '100px', 
+                <p style={{ fontSize: '30pt', color: 'white', paddingLeft: '100px', paddingRight: '100px',
                 paddingBottom: '100px', display: 'inline-block'}}>
                 StreetKnits is a humanitarian knitting charity dedicated to warming bodies and hearts.
                 Since 2013, StreetKnits is the passion and perpetual project of founder Silke Feltz,

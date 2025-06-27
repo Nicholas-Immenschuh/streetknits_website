@@ -1,7 +1,6 @@
 <svg width="1512" height="3667" viewBox="0 0 1512 3667" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_13_537)">
-<rect width="1512" height="3667" fill="#6B892B"/>
-<path d="M-21 -1H1533V2042H-21V-1Z" fill="#DAF1F7"/>
+<path d="M-359 -338H1658V2042H-359V-338Z" fill="#DAF1F7"/>
 <g filter="url(#filter0_d_13_537)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M694.827 111.095C726.638 102.407 758 126.352 758 159.328V2213.84H55V324.017C55 301.476 70.0822 281.722 91.8267 275.783L694.827 111.095Z" fill="#F1894C"/>
 </g>
@@ -32,7 +31,7 @@
 <path d="M111.6 2669L111.986 2669C120.092 2669.21 126.6 2675.85 126.6 2684C126.6 2692.15 120.092 2698.79 111.986 2699L111.6 2699H-175C-183.284 2699 -190 2692.28 -190 2684C-190 2675.72 -183.284 2669 -175 2669H111.6Z" fill="white"/>
 <rect x="189" y="408" width="166.68" height="212.98" rx="1" fill="#E0E1E1"/>
 <rect x="189" y="801" width="166.68" height="212.98" rx="1" fill="#E0E1E1"/>
-<rect x="443" y="410" width="166.68" height="212.98" rx="2" fill="#E0E1E1"/>
+<rect x="443" y="408" width="166.68" height="212.98" rx="2" fill="#E0E1E1"/>
 <rect x="443" y="798.92" width="166.68" height="212.98" rx="1" fill="#E0E1E1"/>
 </g>
 <defs>
