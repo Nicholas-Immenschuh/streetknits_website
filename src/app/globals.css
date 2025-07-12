@@ -166,3 +166,37 @@ footer p {
   width: 80%;
 }
 
+/* Mobile Screen */
+@media only screen and (min-width: 680px) {
+  .hamburger {
+    display: none;
+  }
+}
+@media only screen and (max-width: 680px) {
+
+  .navbar-container {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+  .navbar-links {
+  gap: 1rem;
+}
+
+.navbar-links a {
+  /* Remove any padding or margin */
+  font-size: 18pt; /* Match the logo text font size */
+  line-height: 0; /* Match the logo text line height */
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: text-shadow 0.4s ease; /* Add a smooth transition */
+}
+  .navbar-logo-image {
+  height: 30px;
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 0.25rem;
+}
+  .navbar-logo-text{
+    font-size: 18pt;
+  }
+}
+

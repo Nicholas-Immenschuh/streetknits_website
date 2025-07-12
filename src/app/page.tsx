@@ -8,7 +8,6 @@ export default function Home() {
       >
       <header>
         <nav className="navbar">
-          
             <div className="navbar-container">
               <div className="navbar-logo">
                 <Link href="/">
@@ -18,7 +17,7 @@ export default function Home() {
                   <span className="navbar-logo-text" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>StreetKnits</span>
                 </Link>
               </div>
-              <div className="navbar-links">
+                <div className="navbar-links">
                 <Link href="/donate">Donate</Link>
                 <Link href="/contact">Contact</Link>
               </div>
