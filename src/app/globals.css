@@ -8,24 +8,20 @@
 
 html,
 body {
-  height: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-body {
-  overflow-x: hidden; /* Prevent horizontal scroll */
-}
-
 .navbar {
+  line-height: 1;
   font-size: 24pt;
   font-family: 'Typewriter-Serial-Regular', 'Times New Roman', Times, serif;
   background-color: #9BDEEF;
-  backdrop-filter: blur(5px);
 }
 
 .navbar-container {
+  line-height: 1;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -79,7 +75,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 24pt; /* Match the logo text font size */
-  line-height: 1; /* Match the logo text line height */
+  line-height: 0; /* Match the logo text line height */
   color: #FFFFFF;
   text-decoration: none;
   transition: text-shadow 0.4s ease; /* Add a smooth transition */
@@ -122,6 +118,19 @@ footer p {
   padding-top: 64px;
 }
 
+#homePageBackgroundContainer h1 {
+  color: #9BDEEF;
+  font-size: 90pt; 
+  padding-top: 600px;
+}
+#homePageBackgroundContainer p { 
+  font-size: 30pt;
+  color: white; 
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  display: inline-block;
+}
 /* Donate Page */
 #donatePageBackgroundContainer {
   background-color: #6B892B;
@@ -167,11 +176,6 @@ footer p {
 }
 
 /* Mobile Screen */
-@media only screen and (min-width: 680px) {
-  .hamburger {
-    display: none;
-  }
-}
 @media only screen and (max-width: 680px) {
 
   .navbar-container {
@@ -185,18 +189,93 @@ footer p {
 .navbar-links a {
   /* Remove any padding or margin */
   font-size: 18pt; /* Match the logo text font size */
-  line-height: 0; /* Match the logo text line height */
-  color: #FFFFFF;
-  text-decoration: none;
-  transition: text-shadow 0.4s ease; /* Add a smooth transition */
 }
   .navbar-logo-image {
-  height: 30px;
+  height: 45px;
+  width: auto; /* Maintain aspect ratio */
+  margin-right: 0.25rem;
+  padding: 0;
+  margin: 0;
+}
+  .navbar-logo-text{
+    font-size: 18pt;
+    padding: 0;
+    margin: 0;
+  }
+  #homePageBackgroundContainer h1 {
+  font-size: 60pt; 
+  padding-top: 400px;
+}
+  #homePageBackgroundContainer p { 
+  font-size: 18pt; 
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+}
+
+  @media only screen and (max-width: 460px) {
+
+  .navbar-container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+  .navbar-links {
+  gap: 0.75rem;
+}
+
+.navbar-links a {
+  /* Remove any padding or margin */
+  font-size: 14pt; /* Match the logo text font size */
+}
+  .navbar-logo-image {
+  height: 35px;
   width: auto; /* Maintain aspect ratio */
   margin-right: 0.25rem;
 }
   .navbar-logo-text{
-    font-size: 18pt;
+    font-size: 14pt;
   }
+  #homePageBackgroundContainer h1 {
+  font-size: 40pt; 
+  padding-top: 200px;
+}
+  #homePageBackgroundContainer p { 
+  font-size: 14pt; 
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
+}
+
+@media only screen and (max-width: 350px) {
+  .navbar-container {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+  .navbar-links {
+  gap: 0.50rem;
+}
+
+.navbar-links a {
+  /* Remove any padding or margin */
+  font-size: 12pt; /* Match the logo text font size */
+}
+  .navbar-logo-image {
+  height: 35px;
+}
+  .navbar-logo-text{
+    font-size: 12pt;
+  }
+  #homePageBackgroundContainer h1 {
+  font-size: 20pt; 
+  padding-top: 100px;
+}
+  #homePageBackgroundContainer p { 
+  font-size: 12pt; 
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+}
 }
 

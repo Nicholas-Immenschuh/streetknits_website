@@ -2,8 +2,7 @@ import Link from 'next/link';
 
 export default function Contact() {
   return (
-    
-    <div
+    <div id="homePageContainer"
     style={{ 
         backgroundColor: '#DAF1F7'}}>
       <div id="fb-root"></div>

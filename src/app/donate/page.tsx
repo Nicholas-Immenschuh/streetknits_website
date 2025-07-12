@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Donate() {
   return (
-    <>
+    <div id="donatePageContainer">
       <header>
         <nav className="navbar">
           
@@ -76,6 +76,6 @@ export default function Donate() {
       <footer style={{backgroundColor: '#99C440'}}>
         <p> A website by: Nicholas Immenschuh, Timothy Judge, Nathan Moon, Matthew Wenzel, and Bryce Williams.</p>
       </footer>
-    </>
+    </div>
   );
 }
