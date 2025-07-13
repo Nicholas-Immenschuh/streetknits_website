@@ -5,7 +5,6 @@ export default function Donate() {
     <div id="donatePageContainer">
       <header>
         <nav className="navbar">
-          
             <div className="navbar-container">
               <div className="navbar-logo">
                 <Link href="/">
@@ -16,7 +15,7 @@ export default function Donate() {
                 </Link>
               </div>
               <div className="navbar-links">
-                <Link href="/donate" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)' }}>Donate</Link>
+                <Link href="/donate" id="donatePageDonateText">Donate</Link>
                 <Link href="/contact">Contact</Link>
               </div>
             </div>
@@ -47,13 +46,12 @@ export default function Donate() {
             </section>
           
             <section>
-              <div className="donateSignScalableVectorGraphicContainer">
-                <img className="donateSignScalableVectorGraphic" src= "../donateSign.svg" alt="sign"/>
-                <h1 style={{ color: '#000000', position: 'absolute', top: '32%', left: '49%', transform: 'translate(-50%, -50%)'}}>
+              <div id="donateSignScalableVectorGraphicContainer">
+                <img id="donateSignScalableVectorGraphic" src= "../donateSign.svg" alt="sign"/>
+                <h1>
                   Donations
                 </h1>
-                <p style={{position: 'absolute', top: '52%', left: '49%', transform: 'translate(-50%, -50%)', whiteSpace: 'pre'}}>
-            
+                <p>
                   2014 - Simpson Housing Services (Minneapolis, MN): 56    
                   <br></br>2015 - New Community Shelter (Green Bay, WI):       185
                   <br></br>2016 - New Community Shelter (Green Bay, WI):       203
@@ -67,14 +65,20 @@ export default function Donate() {
                   <br></br>​2024 - Food and Shelter (Norman, OK):                     362
                   <br></br>2025 - in progess...                                                      ???
                 </p>
-                <p style={{position: 'absolute', top: '67%', left: '38%', fontWeight: 'bold'}}>Venmo: "accountName" </p>
+                <div id="venmoContainer">
+                  <p>
+                    Venmo: "accountName" 
+                  </p>
+                </div>
               </div>
             </section>
         </article>
       </main>
 
-      <footer style={{backgroundColor: '#99C440'}}>
-        <p> A website by: Nicholas Immenschuh, Timothy Judge, Nathan Moon, Matthew Wenzel, and Bryce Williams.</p>
+      <footer>
+        <p> 
+          A website redesign by Nicholas Immenschuh
+        </p>
       </footer>
     </div>
   );

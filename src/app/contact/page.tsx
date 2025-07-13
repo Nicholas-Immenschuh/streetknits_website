@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Contact() {
   return (
-    <div id="homePageContainer"
+    <div id="contactPageContainer"
     style={{ 
         backgroundColor: '#DAF1F7'}}>
       <div id="fb-root"></div>
@@ -20,7 +20,7 @@ export default function Contact() {
               </div>
               <div className="navbar-links">
                 <Link href="/donate">Donate</Link>
-                <Link href="/contact" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Contact</Link>
+                <Link href="/contact" id="contactPageContactText" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)'}}>Contact</Link>
               </div>
             </div>
         </nav>
@@ -62,7 +62,7 @@ export default function Contact() {
       </main>
 
       <footer style={{backgroundColor: '#9BDEEF'}}>
-        <p> A website by: Nicholas Immenschuh, Timothy Judge, Nathan Moon, Matthew Wenzel, and Bryce Williams.</p>
+        <p> A website redesign by Nicholas Immenschuh</p>
       </footer>
     </div>
   );
