@@ -1,63 +1,60 @@
 /* filepath: /Users/nicholasimmenschuh/Documents/Computer Science/Individual Projects/StreetKnits/src/app/globals.css */
+
+/* Fonts */ 
 @font-face {
-  font-family: 'Typewriter-Serial-Regular';
+  font-family: Typewriter-Serial-Regular;
   src: url('/Typewriter-Serial-Regular.woff2') format('woff2'),
        url('/Typewriter-Serial-Regular.woff') format('woff'),
        url('/Typewriter-Serial-Regular.ttf') format('truetype');
 }
 
-html,
+/* All Pages */
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-.navbar {
-  line-height: 1;
-  font-size: 24pt;
-  font-family: 'Typewriter-Serial-Regular', 'Times New Roman', Times, serif;
+nav {
+  font-size: 200%;
+  font-family: 'Typewriter-Serial-Regular', 'Courier New', Georgia, Garamond, serif;
   background-color: #9BDEEF;
+  text-decoration: none;
 }
 
 .navbar-container {
-  line-height: 1;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.navbar-logo {
+.navbar-logo-container {
   display: flex;
   align-items: center;
 }
 
-.navbar-logo a {
-  color: #ffffff;
-  text-decoration: none; /* Remove the underline */
-}
-
-.cloudScalableVectorGraphic {
-  height: 30%;
-  width: 30%;
+a {
+  text-decoration: none;
 }
 
 .navbar-logo-image {
-  height: 55px;
-  width: auto; /* Maintain aspect ratio */
-  margin-right: 0.25rem;
+  width: 60px;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  padding-right: 0.5rem;
 }
 
 .navbar-logo-text{
-  /* Remove any padding or margin */
-  padding: 0;
-  margin: 0;
-  font-size: 24pt; /* Example: Set a specific font size */
+  padding-right: 2rem;
   color: #FFFFFF;
   transition: text-shadow 0.3s ease; /* Add a smooth transition */
+  padding-right: 50px;
 }
 
 .navbar-logo-text:hover {
@@ -66,36 +63,35 @@ body {
 
 .navbar-links {
   display: flex;
-  flex-direction: row;
   gap: 2rem;
 }
 
-.navbar-links a {
-  /* Remove any padding or margin */
-  padding: 0;
-  margin: 0;
-  font-size: 24pt; /* Match the logo text font size */
-  line-height: 0; /* Match the logo text line height */
+.navbar-links a{
   color: #FFFFFF;
-  text-decoration: none;
   transition: text-shadow 0.4s ease; /* Add a smooth transition */
 }
 
-.navbar-links a:hover { /* Corrected selector */
+.navbar-links :hover { /* Corrected selector */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
 }
 
 h1 {
   color: #FFFFFF;
-  font-Size: 88pt;
-  font-family: 'Typewriter-Serial-Regular', 'Times New Roman', Times, serif;
+  font-Size: 11vw;
+  font-family: 'Typewriter-Serial-Regular', 'Courier New', Georgia, Garamond, serif;
 }
 
 p {
-  font-size: 30pt;
-  font-family: Avenir, sans-serif, Georgia, 'Times New Roman', Times, serif;
+  font-size: 3vw;
+  font-family: Avenir, Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   display: inline-block;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 footer {
@@ -103,20 +99,19 @@ footer {
 }
 
 footer p {
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
-  font-size: 12pt;
   display: inline-block;
 }
 
 /* Home Page */
-#homePageNavbarLogoText {
+#homePageNavBarStreetKnitsText {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#homePageBackgroundContainer {
+#homePageContainer main{
   background-color: #6B892B;
-  background-image: url(/homePageBackground.svg);
+  background-image: url(/homePageBackground39.svg);
   background-size: contain;
   background-repeat: no-repeat;
   padding-top: 64px;
@@ -129,11 +124,9 @@ footer p {
 
 #homePageBackgroundContainer h1 {
   color: #9BDEEF;
-  font-size: 90pt; 
   padding-top: 600px;
 }
 #homePageBackgroundContainer p { 
-  font-size: 30pt;
   color: white; 
   padding-left: 100px;
   padding-right: 100px;
@@ -142,86 +135,249 @@ footer p {
 }
 
 /* Donate Page */
-#donatePageDonateText {
+#donatePageNavBarDonateText {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#donatePageBackgroundContainer {
+#donatePageContainer main{
   background-color: #6B892B;
-  background-image:  url(/donatePageBackground.svg);
+  background-image:  url(/donatePageBackground58.svg);
+  padding-top: 64px;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 64px;
 }
-
-.cloudScalableVectorGraphic {
-  height: auto;
-  width: auto;
-}
-
 
 .cloudScalableVectorGraphicContainer {
   position: relative;
   text-align: center;
-  top: 100px;
 }
 
-.cloudScalableVectorGraphicText {
+.cloudScalableVectorGraphicContainer p, .cloudScalableVectorGraphicContainer h1 {
   position: absolute;
-  top: 45%;
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  font-family: Avenir, sans-serif, Georgia, Times, serif;
-  font-size: 30pt;
-  font-weight: normal;
-}
-
-#donateSignScalableVectorGraphicContainer {
-  padding-top: 550px;
-  position: relative;
   text-align: center;
-  left: 1%;
-  padding-bottom: 60px;
-}
-
-#donateSignScalableVectorGraphicContainer h1 {
-  color: #000000;
-  position: absolute;
-  top: 32%;
-  left: 49%; 
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
-#donateSignScalableVectorGraphicContainer p {
-position: absolute;
-top: 52%;
-left: 49%;
-transform: translate(-50%, -50%);
-white-space: pre;
+#donatePageCloud1Container {
+  left: 28%;
+  width: 70%;
 }
 
-#donateSignScalableVectorGraphic {
-  height: 80%;
-  width: 80%;
+#donatePageCloud1Container p {
+  height: 60%;
+  width: 70%;
+  color: #F49BAD;
+  text-align: center;
 }
 
-#venmoContainer {
+#donatePageCloud2Container {
+  left: 1%;
+  width: 90%;
+}
+
+#donatePageCloud2Container p {
+  color: #89B7B7;
+  height: 50%;
+  width: 85%;
+}
+
+#donateSignContainer {
+  position: relative;
+  margin-top: 18%;
+  width: 88%;
+  left: 6%;
+  bottom: 20px;
+}
+
+#donateSignContainer table {
   position: absolute;
-  top: 67%;
-  left: 38%; 
-  font-weight: bold;
+  font-size: 2.5vw;
+  font-family: Avenir, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: normal;
+  top: 41.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 82%;
 }
 
-#donatePageContainer footer{
+table, td {
+  border-top: 0.6vw solid rgb(255, 255, 255);
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: center;
+}
+
+th {
+  border-left: 0.6vw solid rgb(255, 255, 255);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+thead th:last-child {
+  border-right: 0.6vw solid rgb(255, 255, 255);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+table tr td:last-child {
+  border-right: 0.6vw solid rgb(255, 255, 255);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+td {
+  border-left: 0.6vw solid rgb(255, 255, 255);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+
+table tr:last-child td:first-child {
+  border-bottom: 0.6vw solid rgb(255, 255, 255);
+  border-left: 0.6vw solid rgb(255, 255, 255);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-bottom-left-radius: 2.2vw;
+}
+
+table tr:last-child td{
+  border-bottom: 0.6vw solid rgb(255, 255, 255);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+/* bottom-right border-radius */
+table tr:last-child td:last-child {
+  border-right: 0.6vw solid rgb(255, 255, 255);
+  border-collapse: separate;
+  border-spacing: 0;
+  border-bottom-right-radius: 2.2vw;
+}
+
+#donateSignContainer table caption {
+  border-left: 0.6vw solid rgb(255, 255, 255);
+  border-right: 0.6vw solid rgb(255, 255, 255);
+  border-top: 0.6vw solid rgb(255, 255, 255);
+  border-top-right-radius: 2.2vw;
+  border-top-left-radius: 2.2vw;
+  font-Size: 8vw;
+  font-family: 'Typewriter-Serial-Regular', 'Courier New', Georgia, Garamond, serif;
+  text-align: center;
+}
+
+#donateSignContainer h1 {
+  font-family: Avenir, Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 2.7vw;
+  position: absolute;
+  text-align: center;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+#donateSignContainer table thead {
+  text-align: center;
+}
+
+#donatePageContainer footer {
   background-color: #99C440;
 }
 
 /* Contact Page */
-#contactPageContactText {
+#contactPageContainer main {
+  background-color: #DAF1F7;
+  padding-top: 64px;
+}
+
+#contactPageNavBarContactText {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Mobile Screen */
+#contactPageCloud1Container {
+  top: 2%;
+  left: 5%;
+  width: 60%;
+}
+
+#contactPageCloud1Container p {
+  color: #F1894C;
+  
+}
+
+#contactPageCloud2Container {
+  left: 45%;
+  width: 50%;
+}
+
+#contactPageCloud2Container h1 {
+  color: #C691AA;
+  font-family: Avenir, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.6vw;
+  font-weight: normal;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  
+}
+
+#contactPageCloud2Container p {
+  color: #89B7B7;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20%;
+}
+
+#contactPageCloud3Container {
+  left: 4%;
+  width: 50%;
+}
+
+#contactPageCloud3Container p {
+  color: #F49BAD;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  height: 50%;
+}
+
+#contactPageCloud4Container {
+  bottom: 20px;
+  left: 30%;
+  width: 50%;
+}
+
+#contactPageCloud4Container iframe {
+  position: absolute;
+  border: none; 
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 70%;
+}
+
+
+#contactPageContainer footer {
+  background-color: #9BDEEF;
+}
+
+
+
+/* Mobile Screen
 @media only screen and (max-width: 680px) {
 
   .navbar-container {
@@ -233,12 +389,11 @@ white-space: pre;
 }
 
 .navbar-links a {
-  /* Remove any padding or margin */
-  font-size: 18pt; /* Match the logo text font size */
+  font-size: 18pt;
 }
   .navbar-logo-image {
   height: 45px;
-  width: auto; /* Maintain aspect ratio */
+  width: auto;
   margin-right: 0.25rem;
   padding: 0;
   margin: 0;
@@ -258,8 +413,8 @@ white-space: pre;
   padding-right: 100px;
   padding-bottom: 100px;
 }
-}
 
+/*
   @media only screen and (max-width: 460px) {
 
   .navbar-container {
@@ -271,12 +426,11 @@ white-space: pre;
 }
 
 .navbar-links a {
-  /* Remove any padding or margin */
-  font-size: 14pt; /* Match the logo text font size */
+  font-size: 14pt; 
 }
   .navbar-logo-image {
   height: 35px;
-  width: auto; /* Maintain aspect ratio */
+  width: auto;
   margin-right: 0.25rem;
 }
   .navbar-logo-text{
@@ -304,8 +458,7 @@ white-space: pre;
 }
 
 .navbar-links a {
-  /* Remove any padding or margin */
-  font-size: 12pt; /* Match the logo text font size */
+  font-size: 12pt;
 }
   .navbar-logo-image {
   height: 35px;
@@ -324,4 +477,5 @@ white-space: pre;
   padding-bottom: 100px;
 }
 }
+*/
 

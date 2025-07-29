@@ -4,25 +4,17 @@ export default function Home() {
   return (
     <div id="homePageContainer">
       <header>
-        <nav className="navbar">
-            <div className="navbar-container">
-              <div className="navbar-logo">
-                <Link href="/">
-                  <img src="../StreetKnitsLogo.png" alt="Streetknits Logo" className="navbar-logo-image" />
-                </Link>
-                <Link href="/">
-                  <span id="homePageNavbarLogoText" className="navbar-logo-text">StreetKnits</span>
-                </Link>
-              </div>
-                <div className="navbar-links">
-                <Link href="/donate">Donate</Link>
-                <Link href="/contact">Contact</Link>
-              </div>
-            </div>
+        <nav>
+          <Link href="/">
+            <img src="../StreetKnitsLogo4.svg" alt="Streetknits Logo"/>
+          </Link>
+          <Link href="/">StreetKnits</Link>
+          <Link href="/donate">Donate</Link>
+          <Link href="/contact">Contact</Link>
         </nav>
       </header>
       
-
+x
       <main id="homePageBackgroundContainer">
         <article>
           <section>
@@ -39,7 +31,7 @@ export default function Home() {
       </main>
 
       <footer>
-            <p> A website redesign by Nicholas Immenschuh</p>
+            <p>A website redesign by Nicholas Immenschuh</p>
       </footer>
       
     </div>

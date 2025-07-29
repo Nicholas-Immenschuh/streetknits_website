@@ -4,73 +4,120 @@ export default function Donate() {
   return (
     <div id="donatePageContainer">
       <header>
-        <nav className="navbar">
+        <nav>
             <div className="navbar-container">
-              <div className="navbar-logo">
+              <div className="navbar-logo-container">
                 <Link href="/">
-                  <img src="../StreetKnitsLogo.png" alt="Streetknits Logo" className="navbar-logo-image" />
+                  <img src="../StreetKnitsLogo4.svg" alt="Streetknits Logo" className="navbar-logo-image"/>
                 </Link>
                 <Link href="/">
                   <span className="navbar-logo-text">StreetKnits</span>
                 </Link>
               </div>
               <div className="navbar-links">
-                <Link href="/donate" id="donatePageDonateText">Donate</Link>
+                <Link href="/donate" id="donatePageNavBarDonateText">Donate</Link>
                 <Link href="/contact">Contact</Link>
               </div>
             </div>
         </nav>
       </header>
 
-      <main id="donatePageBackgroundContainer">
+      <main>
           <article>
-            <section>
-                <div className="cloudScalableVectorGraphicContainer" style={{left: '20%'}}>
-                <img className="cloudScalableVectorGraphic" src= "../donateCloud1.svg" alt="cloud"/>
-                <p className="cloudScalableVectorGraphicText" style={{color: '#F49BAD', top: '45%', left: '50%'}}>
+            <section id="donatePageCloud1Container" className="cloudScalableVectorGraphicContainer">
+                <img src= "cloud1.svg" alt="cloud"/>
+                  <p>
                   We are a community of knitters who want to help keep people safe and warm during the winter. 
                   Would you like to join us? Donating knitted goods is a great place to start!
-                </p>
-              </div>
+                  </p>
             </section>
 
-            <section>
-              <div className="cloudScalableVectorGraphicContainer" style={{right: '10%'}}>
-                <img className="cloudScalableVectorGraphic" src= "../donateCloud2.svg" alt="cloud"/>
-                <p className="cloudScalableVectorGraphicText" style={{color: '#89B7B7', top: '51%', left: '49%'}}>
+            <section id="donatePageCloud2Container" className="cloudScalableVectorGraphicContainer">
+                <img src= "cloud2.svg" alt="cloud"/>
+                <p>
                   Send StreetKnits an email if you would like to mail knitwear or yarn. 
                   Also, if you are short on time and knitting supplies and prefer to donate in another way, 
                   monetary donations are helpful for buying yarn, needles, and organizing knitting workshops.
                 </p>
-              </div>
             </section>
           
-            <section>
-              <div id="donateSignScalableVectorGraphicContainer">
-                <img id="donateSignScalableVectorGraphic" src= "../donateSign.svg" alt="sign"/>
-                <h1>
-                  Donations
-                </h1>
-                <p>
-                  2014 - Simpson Housing Services (Minneapolis, MN): 56    
-                  <br></br>2015 - New Community Shelter (Green Bay, WI):       185
-                  <br></br>2016 - New Community Shelter (Green Bay, WI):       203
-                  <br></br>2017 - New Community Shelter (Green Bay, WI):       262
-                  <br></br>2018 - Food and Shelter (Norman, OK):                     285
-                  <br></br>​2019 - Food and Shelter (Norman, OK):                     338
-                  <br></br>​2020 - Food and Shelter (Norman, OK):                     354
-                  <br></br>​2021 - Food and Shelter (Norman, OK):                     408 
-                  <br></br>2022 - Food and Shelter (Norman, OK):                     416
-                  <br></br>2023 - Food and Shelter (Norman, OK):                     742
-                  <br></br>​2024 - Food and Shelter (Norman, OK):                     362
-                  <br></br>2025 - in progess...                                                      ???
-                </p>
-                <div id="venmoContainer">
-                  <p>
-                    Venmo: "accountName" 
-                  </p>
-                </div>
-              </div>
+            <section id="donateSignContainer">
+                <img src= "../donateSign3.svg" alt="sign"/>
+                <table>
+                    <caption>
+                      Donations
+                    </caption> 
+                  <thead>
+                    <tr>
+                      <th scope="col">Year</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Items</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td>2014</td>
+                        <td>Simpson Housing Services (Minneapolis, MN)</td>
+                        <td>56</td>
+                    </tr>
+                    <tr>
+                      <td>2015</td>
+                      <td>New Community Shelter (Green Bay, WI)</td>
+                      <td>185</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td>
+                        <td>New Community Shelter (Green Bay, WI)</td>
+                        <td>262</td>
+                    </tr>
+                    <tr>
+                      <td>2017</td>
+                      <td>New Community Shelter (Green Bay, WI)</td>
+                      <td>262</td>
+                    </tr>
+                    <tr>
+                      <td>2018</td>
+                      <td>Food and Shelter (Norman, OK)</td>
+                      <td>285</td>
+                    </tr>
+                    <tr>
+                      <td>2019</td>
+                      <td>Food and Shelter (Norman, OK)</td>
+                      <td>338</td>
+                    </tr>
+                    <tr>
+                      <td>2020</td>
+                      <td>Food and Shelter (Norman, OK)</td>
+                      <td>354</td>
+                    </tr>
+                    <tr>
+                      <td>2021</td>
+                      <td>Food and Shelter (Norman, OK)</td>
+                      <td>408</td>
+                    </tr>
+                    <tr>
+                      <td>2022</td>
+                      <td>Food and Shelter (Norman, OK)</td>
+                      <td>416</td>
+                    </tr>
+                    <tr>
+                      <td>2023</td>
+                      <td>Food and Shelter (Norman, OK)</td>
+                      <td>742</td>
+                    </tr>
+                    <tr>
+                      <td>2024</td>
+                      <td>Food and Shelter (Norman, OK)</td>
+                      <td>362</td>
+                    </tr>
+                    <tr>
+                      <td>2025</td>
+                      <td>In Progress</td>
+                      <td>...</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h1>Venmo: "accountName"</h1>
             </section>
         </article>
       </main>
